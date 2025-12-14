@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Absensi Kelas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Absensi Kelas</h1>
+
+    <form id="formAbsen">
+      <input type="text" id="nama" placeholder="Nama Siswa" required>
+      <select id="status">
+        <option value="Hadir">Hadir</option>
+        <option value="Izin">Izin</option>
+        <option value="Sakit">Sakit</option>
+        <option value="Alfa">Alfa</option>
+      </select>
+      <button type="submit">Absen</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Status</th>
+          <th>Tanggal</th>
+        </tr>
+      </thead>
+      <tbody id="dataAbsen"></tbody>
+    </table>
+
+    <button id="hapus">Hapus Semua</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
